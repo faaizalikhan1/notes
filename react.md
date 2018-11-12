@@ -57,3 +57,5 @@ class BlogPostExcerpt extends Component {
 - Initial state can only be set in component's contructor method.
 
 - State's values can be changed in render, before return, can also be passed to a variable, in turn to use in another component.
+
+- No need to import stylesheet for every component(If using a common stylesheet).
