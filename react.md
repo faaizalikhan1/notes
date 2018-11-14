@@ -59,3 +59,36 @@ class BlogPostExcerpt extends Component {
 - State's values can be changed in render, before return, can also be passed to a variable, in turn to use in another component.
 
 - No need to import stylesheet for every component(If using a common stylesheet).
+
+- Inline styles can be added as objects ({{style_object-here}}), and in the object -
+  
+```
+let style={'color':'red', 'font-size':'30px'}
+```
+
+- JSX prevents injection attacks.
+
+- JSX is compiled to **React.createElement** by Babel.
+
+- No need to import stylesheet in every component declaration, importing the stylesheet in the center where all components are used, works same.
+
+- Element is rendered by ReactDOM (ReactDOM.render(element, html_tag_to_be_rendered_on))
+
+- React elements are immutable (Once created, can't change children or attributes).
+
+- Elements can also be created with function declaration, and passing props as a parameter in it:
+
+```
+function Ptst(props){
+  return <i>Hello, {props.name}</i>;
+}
+```
+
+- State is similar to props, but its private and fully controlled by the component. States are available with components defined as classes.
+
+- Mounting- When a component is added to DOM, it's called **mounting**, and when it's removed, it's called **unmounting**.
+
+- Use setState to modify a state:
+```
+this.setState({});
+```
