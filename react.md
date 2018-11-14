@@ -96,3 +96,22 @@ this.setState({});
 - Remember to bind the function to the state in the construtor (Using **this.name_here = this.name_here.bind(this);**).
 
 - Only bind those, where the state is being changed, if the state is being read, it's not needed to bind that.
+
+- Refs are created to access DOM nodes directly within react. To create a ref, in the constructor:
+
+```
+    this.refNameHere = React.createRef()
+
+```
+
+and to add a ref:
+```
+ref={this.refNameHere}
+```
+
+and to access it's value:
+```
+this.refNameHere.current.value
+```
+
+
