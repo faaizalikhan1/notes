@@ -92,3 +92,7 @@ function Ptst(props){
 ```
 this.setState({});
 ```
+
+- Remember to bind the function to the state in the construtor (Using **this.name_here = this.name_here.bind(this);**).
+
+- Only bind those, where the state is being changed, if the state is being read, it's not needed to bind that.
