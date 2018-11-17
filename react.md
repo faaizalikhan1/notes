@@ -104,14 +104,18 @@ this.setState({});
 
 ```
 
-and to add a ref:
-```
-ref={this.refNameHere}
-```
+      and to add a ref:
+      ```
+      ref={this.refNameHere}
+      ```
 
-and to access it's value:
-```
-this.refNameHere.current.value
-```
+      and to access it's value:
+      ```
+      this.refNameHere.current.value
+      ```
 
+
+- Conditional statements must be wrapped around a ( ), after a { }.
+
+- When using conditional statements to display a piece of code, make sure the conditions(if using state), are initially intialised (or when checking for empitiness). 
 
