@@ -119,3 +119,13 @@ this.setState({});
 
 - When using conditional statements to display a piece of code, make sure the conditions(if using state), are initially intialised (or when checking for empitiness). 
 
+- Parsing query strings:
+    The incoming query strings can be parse with the help of query-string module, and using it on
+
+    ```
+    componentDidMount(){
+     const values = queryString.parse(this.props.location.search);
+
+     //This gives us the query strings in the form of an object, which can be then extracted with the help of a key.
+    }
+    ```
