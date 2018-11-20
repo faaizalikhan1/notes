@@ -135,5 +135,5 @@ this.setState({});
 ```
 - Use conditional statements to check between whether an object is empty or not, and display loader based on that.
 
-- In the function(or anywhere), set the state of the variable to something, and then use conditional statements.
+- In the function(or anywhere), set the state of the variable to something, and then display that state, it will change as the the state changes
 ```
