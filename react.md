@@ -129,3 +129,11 @@ this.setState({});
      //This gives us the query strings in the form of an object, which can be then extracted with the help of a key.
     }
     ```
+
+- Two ways to add loading:
+
+```
+- Use conditional statements to check between whether an object is empty or not, and display loader based on that.
+
+- In the function(or anywhere), set the state of the variable to something, and then use conditional statements.
+```
